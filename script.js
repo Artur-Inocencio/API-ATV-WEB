@@ -9,7 +9,7 @@ const getJoke = async () => {
     const name = document.querySelector('#name');
     const status = document.querySelector('#status');
     const species = document.querySelector('#species');
-    const gender = document.getElementById("#render");
+    const gender = document.querySelector("#gender");
 
     if (image) {
         image.src = data.image;
@@ -19,7 +19,7 @@ const getJoke = async () => {
     status && (status.textContent = data.status);
     species && (species.textContent = data.species);
     gender && (gender.textContent = data.gender);
-  
+  console.log("gender",gender)
 }
 
 const jokeButton = document.getElementById('get-joke');
